@@ -1,0 +1,11 @@
+name: lgbm
+description: Traomomg
+implementation:
+  container:
+    image: gcr.io/mercari-anomaly-mini-jp-dev/kubeflow/lgbm:latest
+    command:
+      [
+        python3,
+        -m,
+        anomaly_jp.components.lgbm.training,
+      ]
